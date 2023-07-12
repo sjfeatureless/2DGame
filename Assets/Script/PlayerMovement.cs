@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class PlayerMovement : MonoBehaviour
 
     //Variable  for Animator
     public Animator anim;
+    //public TextMeshProUGUI healthCounter, coinsCounter; do later
 
-
+    //public int coincounter;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //healthCounter.text = healthPoints.ToString(): do later
+        //coinsCounter.text = coincounter.ToString():
+
         //While S is pressed run this animation
         if (Input.GetKeyDown(KeyCode.S))
         {
